@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wordle Solver</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="WordleSolver.css">
+
+    <script src="solver.js"></script>
+    <script src="WordleSolver.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Wordle Solver</h1>
+
+        <div class="info-panel">
+            <div>
+                Suggested:
+                <span id="suggestion">Loading...</span>
+            </div>
+
+            <div>
+                Remaining:
+                <span id="remaining">0</span>
+            </div>
+        </div>
+
+        <div class="board">
+
+            <div class="row">
+
+                <div class="tile grey" contenteditable="true"></div>
+                <div class="tile grey" contenteditable="true"></div>
+                <div class="tile grey" contenteditable="true"></div>
+                <div class="tile grey" contenteditable="true"></div>
+                <div class="tile grey" contenteditable="true"></div>
+
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="submitBtn">Submit</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <div id="status"></div>
+
+    </div>
+
+</body>
+
+</html>
